@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Comprehensive Taxation Services | Direct Tax & GST Solutions | CA PRO</title>
+    <meta name="description" content="Expert Direct and Indirect Taxation services by CA PRO. Specialized in ITR Filing, GST Compliance, ITC Reconciliation, and Assessment Appeals.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #3b82f6;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary-color);
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        /* Unified Header */
+        .hub-header {
+            padding: 160px 0 60px;
+            background: radial-gradient(circle at top right, #eff6ff, #ffffff);
+            text-center: center;
+        }
+
+        .section-label {
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Nav Pills Switcher */
+        .tax-switcher .nav-pills {
+            background: #f1f5f9;
+            padding: 8px;
+            border-radius: 50px;
+            display: inline-flex;
+            margin-bottom: 3rem;
+        }
+
+        .tax-switcher .nav-link {
+            border-radius: 40px;
+            padding: 12px 35px;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: 0.3s;
+        }
+
+        .tax-switcher .nav-link.active {
+            background-color: var(--accent-color);
+            color: #fff;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+        }
+
+        /* Cards Style (Shared) */
+        .service-card {
+            border: 1px solid #f1f5f9;
+            border-radius: 24px;
+            padding: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: #fff;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.08);
+        }
+
+        .icon-box {
+            width: 55px;
+            height: 55px;
+            background: #eff6ff;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        /* Content Blocks */
+        .info-box {
+            background: var(--bg-light);
+            border-radius: 20px;
+            padding: 2rem;
+            border-left: 5px solid var(--accent-color);
+            height: 100%;
+        }
+
+        footer {
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="fa-solid fa-chart-line text-primary me-2"></i>CA PRO
+                </a>
+                <div class="ms-auto">
+                    <a href="consultation.html" class="btn btn-primary rounded-pill px-4">Expert Consultation</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hub-header text-center">
+            <div class="container">
+                <span class="section-label" data-aos="fade-down">Professional Expertise</span>
+                <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">Taxation Excellence Hub</h1>
+                <p class="lead text-muted mx-auto mb-5" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+                    A centralized resource for global tax strategy and local compliance. Toggle between Direct and Indirect tax solutions below.
+                </p>
+
+                <div class="tax-switcher" data-aos="fade-up" data-aos-delay="200">
+                    <ul class="nav nav-pills" id="taxTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="direct-tax-tab" data-bs-toggle="pill" data-bs-target="#direct-tax" type="button" role="tab">Direct Taxation (Income Tax)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="indirect-tax-tab" data-bs-toggle="pill" data-bs-target="#indirect-tax" type="button" role="tab">Indirect Taxation (GST)</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="tab-content" id="taxTabContent">
+        
+        <div class="tab-pane fade show active" id="direct-tax" role="tabpanel">
+            <section class="container py-5">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4">
+                        <div class="service-card">
+                            <div class="icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                            <h3 class="fw-bold h4">ITR Filing & Planning</h3>
+                            <p class="text-muted small">Tax optimization strategies to maximize savings while remaining fully compliant with latest Income Tax amendments.</p>
+                            <ul class="list-unstyled small mt-4">
+                                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Corporate & Individual ITR</li>
+                                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Advance Tax Estimation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-card">
+                            <div class="icon-box"><i class="fa-solid fa-percent"></i></div>
+                            <h3 class="fw-bold h4">TDS/TCS Compliance</h3>
+                            <p class="text-muted small">Managing withholding tax requirements seamlessly. Quarterly filings, reconciliation, and certificate issuance.</p>
+                            <ul class="list-unstyled small mt-4">
+                                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Quarterly Returns Filing</li>
+                                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> TRACES Cleanup & Rectification</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-card">
+                            <div class="icon-box"><i class="fa-solid fa-building-columns"></i></div>
+                            <h3 class="fw-bold h4">Assessment Appeals</h3>
+                            <p class="text-muted small">Representing your case before tax authorities. Robust litigation support for scrutiny and CIT(A) appeals.</p>
+                            <ul class="list-unstyled small mt-4">
+                                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Scrutiny Representation</li>
+                                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Faceless Assessment Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center py-5">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Strategic Optimization</h2>
+                        <div class="info-box mb-4">
+                            <h5 class="fw-bold mb-1 h6 text-primary">Corporate Deductions</h5>
+                            <p class="small text-muted mb-0">Maximizing benefits under Section 80JJAA and R&D credits.</p>
+                        </div>
+                        <div class="info-box">
+                            <h5 class="fw-bold mb-1 h6 text-primary">Global Operations (DTAA)</h5>
+                            <p class="small text-muted mb-0">Avoidance of double taxation for NRIs and multinational corporations.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        
+                        <img src="https://img.freepik.com/free-vector/tax-concept-illustration_114360-3944.jpg" class="img-fluid rounded-4 shadow-sm" style="max-height: 350px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-pane fade" id="indirect-tax" role="tabpanel">
+            <section class="container py-5">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4">
+                        <div class="service-card">
+                            <div class="icon-box"><i class="fa-solid fa-file-signature"></i></div>
+                            <h3 class="fw-bold h4">Registration & Filing</h3>
+                            <p class="text-muted small">Multi-state GST registration and accurate filing of GSTR-1, 3B, and Annual Returns (9/9C).</p>
+                            <ul class="list-unstyled small mt-4">
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Monthly/Quarterly Compliance</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> E-Invoicing Implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-card">
+                            <div class="icon-box"><i class="fa-solid fa-arrows-rotate"></i></div>
+                            <h3 class="fw-bold h4">Reconciliation & ITC</h3>
+                            <p class="text-muted small">In-depth matching of GSTR-2B with purchase registers to ensure maximum Input Tax Credit (ITC) claim.</p>
+                            <ul class="list-unstyled small mt-4">
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> ITC Maximization Analysis</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Vendor Compliance Reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-card">
+                            <div class="icon-box"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <h3 class="fw-bold h4">GST Litigation</h3>
+                            <p class="text-muted small">Defending businesses against GST notices, handling departmental audits, and refund claim processing.</p>
+                            <ul class="list-unstyled small mt-4">
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Show Cause Notice Replies</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Departmental Audit Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center py-5">
+                    <div class="col-lg-6 order-lg-2">
+                        <h2 class="fw-bold mb-4">The GST Value Chain</h2>
+                        <div class="info-box mb-4">
+                            <h5 class="fw-bold mb-1 h6 text-primary">Mandatory GSTR-2B Matching</h5>
+                            <p class="small text-muted mb-0">Strict adherence to recent amendments to avoid blocking of Electronic Credit Ledger.</p>
+                        </div>
+                        <div class="info-box">
+                            <h5 class="fw-bold mb-1 h6 text-primary">Supply Chain Optimization</h5>
+                            <p class="small text-muted mb-0">Structuring transactions to ensure seamless tax flow between vendors and customers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center order-lg-1">
+                        
+                        <img src="https://img.freepik.com/free-vector/receipt-concept-illustration_114360-1923.jpg" class="img-fluid rounded-4 shadow-sm" style="max-height: 350px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <section class="container py-5">
+        <div class="p-5 bg-primary rounded-5 text-center text-white shadow-lg" data-aos="zoom-in">
+            <h2 class="fw-bold mb-3">Facing a Tax Scrutiny or Notice?</h2>
+            <p class="mb-4 opacity-75">Whether it's an Income Tax demand or a GST mismatch, our litigation team is ready to defend your business.</p>
+            <a href="consultation.html" class="btn btn-light btn-lg px-5 fw-bold rounded-pill">Get Emergency Support</a>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-3">
+        <div class="container text-center">
+            <p class="text-muted small mb-0">© 2026 Elite Audit & Tax Consultancy (CA PRO). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+
+</html>

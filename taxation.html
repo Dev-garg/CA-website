@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprehensive Taxation Hub | CA PRO</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0f172a;
+      --accent-color: #3b82f6;
+      --text-muted: #64748b;
+      --bg-light: #f8fafc;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--primary-color);
+      background-color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    /* Header */
+    .hub-header {
+      padding: 160px 0 60px;
+      background: radial-gradient(circle at top right, #eff6ff, #ffffff);
+    }
+
+    /* Switcher */
+    .tax-switcher .nav-pills {
+      background: #f1f5f9;
+      padding: 8px;
+      border-radius: 50px;
+      display: inline-flex;
+      margin-bottom: 3rem;
+    }
+
+    .tax-switcher .nav-link {
+      border-radius: 40px;
+      padding: 12px 35px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .tax-switcher .nav-link.active {
+      background-color: var(--accent-color);
+      color: #fff;
+      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+    }
+
+    /* Cards & Components */
+    .service-card {
+      border: 3px solid var(--primary-color);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      background: #4481d198;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    .service-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 30px 40px rgba(59, 130, 246, 0.2);
+    }
+
+    .icon-box {
+      width: 55px;
+      height: 55px;
+      background: #eff6ff;
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+    }
+
+    .feature-list i {
+      color: var(--accent-color);
+      margin-right: 10px;
+    }
+
+    .compliance-tag {
+      background: #e0e7ff;
+      color: #4338ca;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    footer {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><i class="fa-solid fa-chart-line text-primary me-2"></i>CA
+          PRO</a>
+        <div class="ms-auto"><a href="consultation.html" class="btn btn-primary rounded-pill px-4">Expert
+            Consultation</a></div>
+      </div>
+    </nav>
+
+    <div class="hub-header text-center">
+      <div class="container">
+        <span class="text-primary fw-bold text-uppercase mb-2 d-block" style="letter-spacing: 2px;">Comprehensive
+          Solutions</span>
+        <h1 class="display-4 fw-bold mb-4">Taxation Excellence Hub</h1>
+        <div class="tax-switcher" data-aos="fade-up">
+          <ul class="nav nav-pills" id="taxTab" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill"
+                data-bs-target="#direct-tax">Direct Taxation</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#indirect-tax">Indirect
+                Tax (GST)</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="tab-content" id="taxTabContent">
+
+    <div class="tab-pane fade show active" id="direct-tax" role="tabpanel">
+      <section class="container py-5">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <div class="icon-box"><i class="fa-solid fa-building"></i></div>
+              <h3 class="fw-bold h5">Corporate Taxation</h3>
+              <p class="text-muted small">Specialized tax planning for Companies and LLPs. We handle MAT computations,
+                Dividend Distribution Tax, and Deferred Tax Asset/Liability analysis.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="icon-box"><i class="fa-solid fa-earth-americas"></i></div>
+              <h3 class="fw-bold h5">International Tax & DTAA</h3>
+              <p class="text-muted small">Optimizing cross-border transactions through Double Taxation Avoidance
+                Agreements (DTAA) and handling Form 15CA/15CB certifications.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon-box"><i class="fa-solid fa-scale-balanced"></i></div>
+              <h3 class="fw-bold h5">Litigation & Appeals</h3>
+              <p class="text-muted small">Strong representation before CIT(A) and ITAT. We specialize in search and
+                seizure cases and rectification of faulty assessments.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center bg-light rounded-5 p-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <span class="compliance-tag mb-3 d-inline-block">Scrutiny Support</span>
+            <h2 class="fw-bold">Handling Faceless Assessments</h2>
+            <p class="text-muted">The shift to faceless assessments requires high-quality written submissions and
+              digital paper-books. Our team ensures your documents are logically structured and legally robust.</p>
+            <ul class="list-unstyled feature-list small">
+              <li><i class="fa-solid fa-circle-check"></i> Point-by-point rebuttal of show-cause notices</li>
+              <li><i class="fa-solid fa-circle-check"></i> Preparation of detailed financial reconciliations</li>
+              <li><i class="fa-solid fa-circle-check"></i> Video conferencing representation if required</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 text-center mt-4 mt-lg-0" data-aos="fade-left">
+            <img src="direct.png" class="img-fluid rounded-5" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-pane fade" id="indirect-tax" role="tabpanel">
+      <section class="container py-5">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <div class="icon-box"><i class="fa-solid fa-qrcode"></i></div>
+              <h3 class="fw-bold h5">E-Invoicing & E-Way Bill</h3>
+              <p class="text-muted small">Automated systems for real-time IRN generation and E-way bill compliance to
+                ensure smooth transit of goods without penalties.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <h3 class="fw-bold h5">GST Health Check (Audit)</h3>
+              <p class="text-muted small">A proactive internal audit of your GST records to identify leakages in Input
+                Tax Credit (ITC) and prevent departmental notices.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon-box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <h3 class="fw-bold h5">GST Refund Processing</h3>
+              <p class="text-muted small">Specialized support for Exporters (LUT/IGST) and businesses with inverted duty
+                structures to claim timely refunds.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center bg-light rounded-5 p-3">
+          <div class="col-lg-6 order-lg-2">
+            <span class="compliance-tag mb-3 d-inline-block">Risk Mitigation</span>
+            <h2 class="fw-bold">The Power of Reconciliation</h2>
+            <p class="text-muted">With the mandatory implementation of GSTR-2B, any mismatch between your books and your
+              supplier’s filing leads to blocked credit. We perform 3-way reconciliations.</p>
+            <div class="d-flex gap-4 mt-4">
+              <div class="text-center">
+                <h4 class="fw-bold text-primary mb-0">100%</h4>
+                <p class="small text-muted">ITC Claimed</p>
+              </div>
+              <div class="text-center">
+                <h4 class="fw-bold text-primary mb-0">Zero</h4>
+                <p class="small text-muted">Notice Risk</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 mt-4 mt-lg-0 text-center p-3" data-aos="fade-left">
+            <img src="indirect.png" class="img-fluid rounded-5" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="footer" class="pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <div class="fw-bold fs-3 mb-3">
+            <i class="fa-solid fa-chart-line text-primary me-2"></i>CA PRO
+          </div>
+          <p class="text-muted pe-lg-5">
+            Providing top-tier financial advisory and compliance services to help businesses grow in a complex
+            regulatory world.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-circle"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-circle"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-circle"><i
+                class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <nav class="col-6 col-lg-2">
+          <h6 class="fw-bold mb-4">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#services" class="text-muted text-decoration-none">Our Services</a></li>
+            <li class="mb-2"><a href="#solutions" class="text-muted text-decoration-none">Solutions</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+          </ul>
+        </nav>
+
+        <nav class="col-6 col-lg-2">
+          <h6 class="fw-bold mb-4">Services</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Tax Planning</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Statutory Audit</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">GST Compliance</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Payroll Mgmt</a></li>
+          </ul>
+        </nav>
+
+        <div class="col-lg-4">
+          <h6 class="fw-bold mb-4">Newsletter</h6>
+          <p class="small text-muted">Subscribe for monthly tax updates and financial tips.</p>
+          <form class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <hr class="opacity-10">
+      <div class="text-center">
+        <p class="mb-0 text-muted small">© 2026 Elite Audit & Tax Consultancy. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: false });</script>
+</body>
+
+</html>
